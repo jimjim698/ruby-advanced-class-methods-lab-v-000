@@ -30,8 +30,9 @@ def self.create_by_name(name)
 end
 
 def self.find_by_name(name)
-song = self.all.detect(name)
-song
+self.all.detect each do |song| 
+  song == name
+end
 end
 
 end

@@ -48,7 +48,7 @@ def new_from_filename(filename)
   splitfilename= filename.chop.chop.chop.chop.split("-")
   song = song.new
   song.name = splitfilename[0]
-  song.artist_name = splitfilename[1]
+  song.artist_name = splitfilename[0]
   song
 end
 

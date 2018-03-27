@@ -44,11 +44,11 @@ def self.alphabetical
   self.all.sort_by {|song| song.name}
 end
 
-def new_from_filename(filename)
+def self.new_from_filename(filename)
   splitfilename= filename.chop.chop.chop.chop.split("-")
   song = song.new
   song.name = splitfilename[0]
-  song.artist_name = splitfilename[0]
+  song.artist_name = splitfilename[1]
   song
 end
 

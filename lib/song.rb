@@ -49,7 +49,7 @@ def new_from_filename(filename)
   song = song.new
   song.name = splitfilename[0]
   song.artist_name = splitfilename[1]
-  song 
+  song
 end
-  
+
 end

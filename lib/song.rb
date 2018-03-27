@@ -45,7 +45,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  splitfilename= filename.chop.chop.chop.chop.split(" -")
+  splitfilename= filename.chop.chop.chop.chop.split(" - ")
   song = Song.new
   song.name = splitfilename[1]
   song.artist_name = splitfilename[0]
